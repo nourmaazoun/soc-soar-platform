@@ -27,10 +27,33 @@ Projet de fin d'année — IIT Sfax, Département Informatique, 2025/2026
 | Brute force telnet | détecté et bloqué |
 | Injection SQL | détectée et bloquée |
 | Gestion d'incident | alerte créée automatiquement dans TheHive |
-| Threat Intelligence | IP analysée par Cortex et reconnue par MISP |
+| Threat Intelligence | IP analysée par Cortex et reconnue par MISP 
 
 ## Outils
-
 pfSense · Snort · Shuffle · TheHive · Cortex · MISP · PostgreSQL · Grafana · Docker · VMware
+
+
+
+## Démonstration
+
+Un scan Nmap depuis Kali : les ports sont ouverts au premier passage, puis l'attaquant est bloqué et tous les ports deviennent filtrés.
+
+![Scan avant et après le blocage](docs/screenshots/2-nmap-avant-apres-blocage.png)
+
+L'alerte est créée automatiquement dans TheHive, puis Cortex reconnaît l'attaquant grâce à MISP.
+
+![Alerte dans TheHive](docs/screenshots/4-thehive-alerte.png)
+![Analyse Cortex et MISP](docs/screenshots/6-cortex-analyse-misp.png)
+
+## Contenu du dépôt
+
+| Dossier | Contenu |
+|---|---|
+| [`snort/`](snort/local.rules) | règles de détection personnalisées |
+| [`scripts/`](scripts/snort_shuffle_watcher.sh) | script de liaison Snort → Shuffle |
+| [`shuffle/`](shuffle/workflow.json) | workflow de réponse automatique |
+| [`pfsense/`](pfsense/configuration-guide.md) | guide de configuration du pare-feu |
+| [`thehive-cortex-misp/`](thehive-cortex-misp/integration-guide.md) | guide d'intégration TheHive, Cortex et MISP |
+| [`docs/`](docs/rapport-technique.pdf) | rapport technique et captures |
 
 
