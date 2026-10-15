@@ -1,7 +1,8 @@
 # PFA — Détection et réponse automatisée aux incidents de sécurité
 
-Laboratoire SOC/SOAR entièrement open source, réalisé sous VMware.
-Snort détecte les attaques, Shuffle bloque l'attaquant sur pfSense, et l'incident est traité dans TheHive, enrichi par Cortex et MISP.
+Plateforme SOC/SOAR open source assurant la détection des intrusions, la réponse automatisée aux incidents et leur gestion collaborative.
+
+Les alertes de l’IDS Snort déclenchent, via Shuffle, le blocage de la source sur le pare-feu pfSense et la création d’un incident dans TheHive, enrichi par Cortex et MISP. L’ensemble est déployé dans un environnement de laboratoire virtualisé sous VMware.
 
 Projet de fin d'année — IIT Sfax, Département Informatique, 2025/2026
 
