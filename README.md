@@ -32,6 +32,4 @@ Projet de fin d'année — IIT Sfax, Département Informatique, 2025/2026
 
 pfSense · Snort · Shuffle · TheHive · Cortex · MISP · PostgreSQL · Grafana · Docker · VMware
 
-## Équipe
 
-MAAZOUN Nour · CHOURA Yessine · TOUMI Karim · KALLEL Halim
