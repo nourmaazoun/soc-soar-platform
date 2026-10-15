@@ -77,5 +77,5 @@ Lors de l'analyse suivante, Cortex reconnaît l'attaquant grâce à MISP, alors 
 | [`scripts/`](scripts/snort_shuffle_watcher.sh) | script de liaison Snort → Shuffle |
 | [`shuffle/`](shuffle/workflow.json) | workflow de réponse automatique |
 | [`pfsense/`](pfsense/configuration-guide.md) | guide de configuration du pare-feu |
-| [`thehive-cortex-misp/`](thehive-cortex-misp/integration-guide.md) | guide d'intégration TheHive, Cortex et MISP |
+
 | [`docs/`](docs/rapport-technique.pdf) | rapport technique et captures |
