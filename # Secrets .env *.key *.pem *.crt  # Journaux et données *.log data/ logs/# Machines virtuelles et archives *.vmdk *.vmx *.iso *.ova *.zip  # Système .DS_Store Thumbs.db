@@ -1,0 +1,21 @@
+# Secrets
+.env
+*.key
+*.pem
+*.crt
+
+# Journaux et données
+*.log
+data/
+logs/
+
+# Machines virtuelles et archives
+*.vmdk
+*.vmx
+*.iso
+*.ova
+*.zip
+
+# Système
+.DS_Store
+Thumbs.db
